@@ -13,3 +13,5 @@ select * from tbl_department;
 Insert into tbl_department (DeptId,DeptName) values (6, 'Analysis');
 
 
+
+
