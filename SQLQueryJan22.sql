@@ -13,5 +13,13 @@ select * from tbl_department;
 Insert into tbl_department (DeptId,DeptName) values (6, 'Analysis');
 
 
+create procedure mypractice2
+@DeptId int,
+@DeptName varchar(50)
+as
+Begin
+select * from tbl_department where DeptId=@DeptId;
+End
 
+exec mypractice2 1, 'cs';
 
